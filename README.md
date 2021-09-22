@@ -23,7 +23,8 @@ Java 11.0.12 2021-07-20 LTS
 ### Informações sobre o trabalho
 
 ```
-Este trabalho consiste em uma implementação de uma Máquina de Turing Universal que implemente heurísticas para o Problema da Parada.
+Este trabalho consiste em uma implementação de uma Máquina de Turing Universal
+que implemente heurísticas para o Problema da Parada.
 ```
 
 ### Informações sobre a Máquina de Turing
