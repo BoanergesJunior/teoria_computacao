@@ -1,3 +1,5 @@
+package src;
+
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -7,11 +9,11 @@ public class Main {
 
     String inputFile, outputFile;
 
-    System.out.print("Arquivo de entrada .txt: ");
-    inputFile = "input.txt";
+    // System.out.print("Arquivo de entrada .txt: ");
+    inputFile = "./src/input.txt";
     // inputFile = in.next();
 
-    System.out.print("Arquivo de saida .txt: ");
+    // System.out.print("Arquivo de saida .txt: ");
     outputFile = "output.txt";
     // outputFile = in.next();
 

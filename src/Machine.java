@@ -1,16 +1,19 @@
+package src;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Scanner;
 
 public class Machine {
 
   String line = "";
   String inputFile = "";
   String outputFile = "";
-  Scanner file;
+  char character;
   HandleStates handleStates;
   BufferedReader buffer;
+  int count = 0;
+  String state = "";
 
   Machine(String inputFile, String outputFile) {
     this.inputFile = inputFile;
@@ -25,9 +28,20 @@ public class Machine {
       buffer = new BufferedReader(reader);
 
       while (buffer.ready()) {
-        line = buffer.readLine();
-        handleStates.setListStates(line);
+
+        character = (char) buffer.read();
+
+        state += character;
+
+        if (state.equals("000")) {
+          state = "";
+        } else if (state.length() > 2 && state.substring(state.length() - 2).equals("00")) {
+          handleStates.addState(state);
+          state = "";
+        }
       }
+
+      handleStates.defineStates();
 
     } catch (IOException ex) {
       ex.printStackTrace();
