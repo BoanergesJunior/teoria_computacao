@@ -14,4 +14,24 @@ public class State {
     this.symbolToWrite = symbolToWrite;
     this.direction = direction;
   }
+
+  public String getStateTape() {
+    return stateTape;
+  }
+
+  public String getReadTape() {
+    return readTape;
+  }
+
+  public String getNextState() {
+    return nextState;
+  }
+
+  public String getSymbolToWrite() {
+    return symbolToWrite;
+  }
+
+  public String getDirection() {
+    return direction;
+  }
 }
