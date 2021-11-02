@@ -3,7 +3,16 @@ package src;
 import java.io.IOException;
 import java.util.Scanner;
 
+/**
+ * Classe Principal que inicializa a maquina de Turing
+ * 
+ * @author Boanerges Potyguara Saes Junior - 201821136
+ */
 public class Main {
+
+  /**
+   * @throws IOException
+   */
   public static void main(String[] args) throws IOException {
     Scanner in = new Scanner(System.in);
 

@@ -4,6 +4,11 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
+/**
+ * Classe que faz a leitura de entrada da maquina e separa em transicoes
+ *
+ * @author Boanerges Potyguara Saes Junior - 201821136
+ */
 public class Machine {
 
   String line = "";
@@ -21,6 +26,11 @@ public class Machine {
     handleStates = new HandleStates();
   }
 
+  /**
+   * Metodo responsavel por ler o arquivo que contem a maquina e separa-lo em
+   * estados
+   *
+   */
   public void readFile() {
 
     try {
@@ -48,6 +58,11 @@ public class Machine {
     }
   }
 
+  /**
+   * Metodo getter para o nome do arquivo que sera lido
+   *
+   * @return nome do arquivo
+   */
   public String getInputFile() {
     return inputFile;
   }
